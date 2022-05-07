@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/assets/background/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: relative;
+}
+
+/* LOGO */
+
+.logo{
+    width: 190px;
+    margin-left: 100px;
+    margin-top: 50PX;
+    margin-bottom: 70px;
+}
+
+/* PRINCIPAL CONTENT */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* PRINCIPAL IMAGE */
+
+.img-principal{
+    width: 600px;
+    margin-right: 50px;
+}
+
+/* SECTION INFORMATION */
+
+section{
+    margin-top: 35px;
+    margin-right: 50px;
+}
+
+/* TITLE */
+
+h1{
+    width: 450px;
+    font-size: 35px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+
+/* PARAGRAPH */
+
+p{
+    width: 460px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+
+button{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    padding: 10px 45px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(0, 0%, 100%);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+/* SOCIAL */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 120px;
+}
+
+ion-icon{
+    font-size: 30px;
+    color: white;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+ion-icon:hover{
+    color: hsl(300, 69%, 71%);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/* FOOTER */
+
+.footer{
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links{
+    margin: 0;
+    font-size: 13px;
+    color: hsl(0, 0%, 100%);
+}
+
+.link{
+    margin-left: 5px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    transition: all 0.5s;
+    font-size: 13px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.link:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 440px){
+    
+    body{
+        /* height: 100%; */
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/assets/background/bg-mobile.svg");
+        background-size: 100%;
+
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .logo{
+        width: 150px;
+        margin-left: 40px;
+    }
+
+    main{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 50px; */
+    }
+
+    .img-principal{
+        width: 300px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    section{
+        width: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        width: 300px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    p{
+        width: 300px;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    button{
+        padding: 10px 70px;
+        margin-bottom: 80px;
+    }
+
+    nav{
+        justify-content: space-around;
+        width: 40%;
+        margin: 0;
+    }
+
+    .footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+
+    .footer-links, .link{
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+}
